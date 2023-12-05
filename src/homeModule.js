@@ -19,12 +19,23 @@ const homeSetter = (() => {
     const midContent = document.createElement('div');
     midContent.classList.add('midContent');
     mainContainer.appendChild(midContent);
+    const mainTitle = document.createElement('p');
+    mainTitle.classList.add('mainTitle');
+    mainTitle.textContent = 'The Caffeine Collective';
+    const slogan = document.createElement('p');
+    slogan.classList.add('slogan');
+    slogan.textContent = 'Where Great Coffee Fuels Greater Work.';
+    midContent.append(mainTitle, slogan);
   });
 
   const footerSetter = (() => {
     const footer = document.createElement('div');
     footer.classList.add('footer');
     mainContainer.appendChild(footer);
+    const gitUser = document.createElement('p');
+    gitUser.classList.add('gitUser');
+    gitUser.textContent = '@Ladinofel 2023';
+    footer.append(gitUser);
   });
   
   headerSetter();

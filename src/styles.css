@@ -8,3 +8,15 @@ a:hover {
   cursor: pointer;
 }
 
+.mainTitle,
+.slogan,
+.gitUser {
+  display: flex;
+  justify-content: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
