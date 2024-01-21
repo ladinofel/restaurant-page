@@ -1,7 +1,34 @@
+@font-face {
+  font-family: 'sloganFont';
+  src: url('./Pacifico-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'generalFont';
+  src: url('./Raleway-Italic-VariableFont_wght.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(241, 228, 212);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
-  padding: 4vh;
+  padding: 4vh 4vh 0 4vh;
+  height: 10vh; 
+  font-size: 3.5vh;
+  font-family: 'generalFont';
+  font-weight: bolder;
 }
 
 a:hover {
@@ -13,10 +40,44 @@ a:hover {
 .gitUser {
   display: flex;
   justify-content: center;
+  margin: 5px;
 }
 
-#content {
+.midContent {
+  height: 70vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: 3vh;
+  font-family: 'sloganFont';
+  text-align: center;
 }
 
+img {
+  height: 20vh;
+  width: auto;
+}
+
+.footer {
+  height: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-family: 'generalFont';
+}
+
+.gitUser {
+  display: flex;
+}
+
+.menuContainer {
+  display: flex;
+  gap: 5vw;
+}
+
+.menuImage {
+  height: 40vh;
+  border-radius: 10px;
+}
