@@ -18,8 +18,13 @@ const homeSetter = (() => {
     contactLink.textContent = "Contact";
     header.append(homeLink, menuLink, contactLink);
 
+    const backToZero = (() => {
+      location.reload(true);
+    });
+
     const btnSetter = (() => {
-      menuLink.addEventListener('click', menuSetter);      
+      menuLink.addEventListener('click', menuSetter);
+      homeLink.addEventListener('click', backToZero);    
     });
     
     btnSetter();

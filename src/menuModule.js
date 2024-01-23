@@ -52,9 +52,10 @@ const menuSetter = (() => {
     midContent.append(menuContainer);
   });
   
-
+  
   removeElements();
   addMenuElements();
+  return {removeElements}
 });
 
 export default menuSetter;
