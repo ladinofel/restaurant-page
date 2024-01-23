@@ -55,7 +55,7 @@ const menuSetter = (() => {
   
   removeElements();
   addMenuElements();
-  return {removeElements}
+  
 });
 
 export default menuSetter;

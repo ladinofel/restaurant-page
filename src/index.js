@@ -1,6 +1,7 @@
 import './styles.css';
 import MidSetter from './homeModule.js';
 import menuSetter from './menuModule.js';
+import contactSetter from './contactModule.js';
 
 
 const homeSetter = (() => {
@@ -24,7 +25,8 @@ const homeSetter = (() => {
 
     const btnSetter = (() => {
       menuLink.addEventListener('click', menuSetter);
-      homeLink.addEventListener('click', backToZero);    
+      homeLink.addEventListener('click', backToZero);
+      contactLink.addEventListener('click', contactSetter);    
     });
     
     btnSetter();
